@@ -1,6 +1,6 @@
-<h1>Editing Realestate</h1>
+<h1>物件編集</h1>
 
-<%= render 'form', realestate: @realestate %>
+<%= render 'form', realestate: @realestate, submit_label: "更新する" %>
 
-<%= link_to 'Show', @realestate %> |
-<%= link_to 'Back', realestates_path %>
+<%= link_to "詳細", @realestate %> |
+<%= link_to "戻る", realestates_path %>
