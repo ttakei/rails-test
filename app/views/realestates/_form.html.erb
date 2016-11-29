@@ -1,0 +1,72 @@
+<%= form_for(realestate) do |f| %>
+  <% if realestate.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(realestate.errors.count, "error") %> prohibited this realestate from being saved:</h2>
+
+      <ul>
+      <% realestate.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :rent %>
+    <%= f.number_field :rent %>
+  </div>
+
+  <div class="field">
+    <%= f.label :address %>
+    <%= f.text_field :address %>
+  </div>
+
+  <div class="field">
+    <%= f.label :age %>
+    <%= f.number_field :age %>
+  </div>
+
+  <div class="field">
+    <%= f.label :remarks %>
+    <%= f.text_area :remarks %>
+  </div>
+
+  <div class="field">
+    <%= f.label :route1 %>
+    <%= f.text_field :route1 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :station1 %>
+    <%= f.text_field :station1 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :distance_walk1 %>
+    <%= f.number_field :distance_walk1 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :route2 %>
+    <%= f.text_field :route2 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :station2 %>
+    <%= f.text_field :station2 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :distance_walk2 %>
+    <%= f.number_field :distance_walk2 %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @realestate.name %>
+</p>
+
+<p>
+  <strong>Rent:</strong>
+  <%= @realestate.rent %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @realestate.address %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @realestate.age %>
+</p>
+
+<p>
+  <strong>Remarks:</strong>
+  <%= @realestate.remarks %>
+</p>
+
+<p>
+  <strong>Route1:</strong>
+  <%= @realestate.route1 %>
+</p>
+
+<p>
+  <strong>Station1:</strong>
+  <%= @realestate.station1 %>
+</p>
+
+<p>
+  <strong>Distance walk1:</strong>
+  <%= @realestate.distance_walk1 %>
+</p>
+
+<p>
+  <strong>Route2:</strong>
+  <%= @realestate.route2 %>
+</p>
+
+<p>
+  <strong>Station2:</strong>
+  <%= @realestate.station2 %>
+</p>
+
+<p>
+  <strong>Distance walk2:</strong>
+  <%= @realestate.distance_walk2 %>
+</p>
+
+<%= link_to 'Edit', edit_realestate_path(@realestate) %> |
+<%= link_to 'Back', realestates_path %>
