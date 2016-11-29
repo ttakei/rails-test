@@ -7,7 +7,7 @@
 
 <p>
   <strong>賃料</strong>
-  <%= @realestate.rent %>
+  <%= number_to_currency(@realestate.rent, :locale => 'jp') %>
 </p>
 
 <p>

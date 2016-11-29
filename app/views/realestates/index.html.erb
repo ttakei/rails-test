@@ -18,7 +18,7 @@
     <% @realestates.each do |realestate| %>
       <tr>
         <td><%= realestate.name %></td>
-        <td><%= realestate.rent %></td>
+        <td><%= number_to_currency(realestate.rent, :locale => 'jp') %></td>
         <td><%= realestate.address %></td>
         <td><%= realestate.age %></td>
         <td><%= realestate.remarks %></td>
